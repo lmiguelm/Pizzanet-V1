@@ -1,0 +1,28 @@
+table
+{
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 65%;
+	font-weight: bold;
+	color:black;
+	text-align: center;
+	padding: 5px;
+}
+thead
+{
+	background-color: green;
+	color: white;
+}
+tbody{background-color: white;}
+
+td, th{border:none;}
+
+tr{border:1px solid black;}
+
+.tr_body:hover{background-color: rgb(250,33,41);}
+
+.remover
+{
+	text-decoration: none;
+	color:red;
+}

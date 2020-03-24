@@ -1,0 +1,114 @@
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu a{ margin: 0; padding:0; list-style:none; text-decoration:none;}
+ul.menu ul{ position:absolute; display:none; box-shadow:3px 3px 2px #333;}
+ 
+/* Configurações nivel 1*/
+ul.menu{ float:left; font-family: helvetica, colibri, tahoma, sans-serif; font-size:17px; border-radius:10px; padding:0 5px;}
+.menu li{ float:left; width:auto; position:relative;}
+.menu li a{ display:block; padding:0 20px; line-height:45px; height:45px; float:left; transition:all 0.1s linear; }
+ 
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1{ display:block; top:45px; left:0; padding:5px; width:200px; border-radius:0 0 5px 5px;   }
+.menu ul.submenu-1 a{  width:160px; padding:0 20px; border-radius:5px;  }
+ 
+ 
+/*Configurações de cores*/
+ 
+/*nivel 1*/
+.menu{background:green; }
+.menu a{ color:white;}
+.menu li:hover > a{ background:rgb(0,100,0);  color: rgb(250,33,41);}
+.menu .login:hover > a{ background:green; color: rgb(250,33,41); padding-right: 30px;  padding-left: 30px;}
+.menu .home:hover > a{ background:green;  color:rgb(250,33,41); padding-right: 30px;  padding-left: 30px;}
+ 
+/*nivel 2*/
+.submenu-1{ background:rgb(0,100,0);}
+.submenu-1 a{color:#fff;}
+.submenu-1 li:hover > a{ background:rgb(0,125,0); }
+
+ 
+/* ------------------------------------------------------------------------------------------------------ */
+html {
+	font: 100%;
+	font-family: helvetica, colibri, tahoma, sans-serif;
+	color: #333;
+	background-image: url("../img/fundo.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+	background-color: black;
+	background-position: initial initial;
+	background-repeat: no-repeat;
+}
+
+nav{display: flex; justify-content: center; margin: 30px auto;}
+
+input, button, select
+{
+	border-radius: 6px;
+	width: 180px;
+	border:1px solid;
+	text-align: center;
+	font-size: 15px;
+	display: inline-block;
+}
+button, input[type=submit]
+{
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  color:white;
+  background-color: green;
+  border:2px solid rgb(0,118,0);
+  font-weight: bold;
+}
+button:hover, input[type=submit]:hover{padding-right: 20px;}
+
+.pizza{width: 250px;}
+
+input[type=date]{width: 140px;}
+
+input[type=radio]{width: 20px;}
+
+.ingredientes{width: 450px;}
+.pagamento{width: 250px;}
+.preco{width: 100px;}
+.horas{width: 100px;}
+
+
+h1{position: absolute; font-size: 30px; color:white;}
+
+label{font-weight: bold; color: white;}
+
+.cadastrado, .removido, .erro, .invalido{color:white; font-weight: bold; text-decoration: none;}
+.login{font-weight: bold;}
+
+.remove{
+
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/lixeira.gif");
+	background-repeat: no-repeat;	
+	display: block;
+	float: right;
+}
+
+p{color: black; font-weight: bold;}
+
+@keyframes neon
+{
+	from
+	{
+		filter: drop-shadow(0 0 0 var(--cor--neon));
+	}
+	to
+	{
+		filter: drop-shadow(0 0 30px var(--cor--neon));
+	}
+}
+
+h1{animation: neon 2s alternate infinite ease-in-out;}
+
+.muda
+{
+	--cor--neon: red;
+}
